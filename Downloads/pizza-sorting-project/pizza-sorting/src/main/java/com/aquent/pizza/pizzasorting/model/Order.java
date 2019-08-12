@@ -2,7 +2,7 @@ package com.aquent.pizza.pizzasorting.model;
 
 import java.util.Date;
 
-public class Order implements Comparable<Order> {
+public class Order {
 
 	private String name;
 	private Date date;
@@ -26,14 +26,6 @@ public class Order implements Comparable<Order> {
 
 	public void setDate(Date date) {
 		this.date = date;
-	}
-
-	@Override
-	public int compareTo(Order o) {
-		if (o.getDate() == null || o.getDate() == null) {
-			return 0;
-		}
-		return getDate().compareTo(o.getDate());
 	}
 
 }
